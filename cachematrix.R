@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## or retreive it from the cache if it has been cached
 
 cacheSolve <- function(mcm, ...) {
-	    # Check if there is a cached result, return it if there is
+	# Check if there is a cached result, return it if there is
         inv <- mcm$getinv()
         if(!is.null(inv)) {
                 message("getting cached data")
