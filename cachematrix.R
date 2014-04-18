@@ -55,9 +55,9 @@ inverseCheck <- function(mcm, ...) {
 	mat <- mcm$get()
 	if(is.null(inv)) {
 		message("There's no cache yet, calculating inverse")
-    	inv <- solve(mat, ...)
-    	mcm$setinv(inv)
-    }
-    res <- inv %*% mat
-    res
+    		inv <- solve(mat, ...)
+    		mcm$setinv(inv)
+    	}	
+    	res <- inv %*% mat
+    	res
 }
